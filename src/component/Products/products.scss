@@ -1,0 +1,19 @@
+.card-img-top1 {
+    position: relative;
+    width: 100%;
+}
+
+.card-img-top2 {
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition:all  0.3s ease;
+    padding: 10px;
+}
+.card-top :hover  {
+    opacity: 1;
+}
+.btn2{
+    float: right;
+}
