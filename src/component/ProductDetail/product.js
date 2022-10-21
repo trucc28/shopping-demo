@@ -5,7 +5,7 @@ import "./product.scss";
 import SideSP from "../SideProduct/product"
 import { Link } from "react-router-dom";
 import { useDispatch } from 'react-redux';
-import { addTocart } from "~/redux/cartSlice";
+import { addTocart } from "../../redux/cartSlice";
 import Crouses  from "../../Data/Data.json"
 
 export default function Product() {

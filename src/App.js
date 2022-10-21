@@ -10,8 +10,6 @@ import Footer from "./component/Footer/footer";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
-
-
 export default function App() {
   return (
     <>

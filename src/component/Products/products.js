@@ -1,7 +1,7 @@
 import React, { useState} from "react";
 import { Link } from "react-router-dom";
 import "./products.scss";
-import { addTocart } from "~/redux/cartSlice";
+import { addTocart } from "../../redux/cartSlice";
 import { useDispatch } from "react-redux";
 import Crouses  from "../../Data/Data.json"
 

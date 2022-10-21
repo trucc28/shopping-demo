@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addTocart } from "~/redux/cartSlice";
+import { addTocart } from "../../redux/cartSlice";
 import Crouses  from "../../Data/Data.json"
 
 
