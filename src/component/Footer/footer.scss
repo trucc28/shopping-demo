@@ -1,0 +1,27 @@
+.footer {
+   background: orange;
+    padding-top: 30px;
+    margin-top: 200px;
+    h4 {
+        position: relative;
+        font-size: 20px;
+      &:after {
+        content: '';
+        position: absolute;
+        border-bottom: 2px solid #000;
+        width: 50%;
+        left: 0;
+        bottom: -5px;
+      }
+    }
+    ul {
+        padding: 0;
+    }
+
+} 
+@media screen and (max-width:768px) {
+  .footer {
+    margin-top: 100px;
+  }
+  
+}

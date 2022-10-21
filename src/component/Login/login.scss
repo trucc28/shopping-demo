@@ -1,0 +1,29 @@
+
+.infoform{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    margin: auto;
+    
+    input {
+        padding: 10px 10px;
+    }
+    button {
+        
+        width: 30%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    p {
+        color: red;
+        margin: 0;
+      
+    }
+}
+@media screen and (max-width:768px) {
+
+    .infoform {
+        width: 90%;
+    }
+}

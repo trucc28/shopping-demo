@@ -1,47 +1,44 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
-import { FaStar,FaStarHalfAlt} from "react-icons/fa";
+
 import "./product.scss";
-import SideSP from "../SideSP/sideSP"
+import SideSP from "../SideProduct/product"
 import { Link } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { addTocart } from "~/redux/cartSlice";
-
+import Crouses  from "../../Data/Data.json"
 
 export default function Product() {
-    const { id } = useParams();
-    const [product, setProduct] = useState([]);
+  const dispatch = useDispatch()
 
-    const dispatch = useDispatch()
+ const proid = useParams();
+ const proDetail = Crouses.filter(x=>x.id === proid.id)
+ const product = proDetail[0]
 
-
-
-
-    useEffect(() => {
-        const getProduct = async () => {
-           
-            const res = await fetch(`http://localhost:3000/course/${id}`);
-            setProduct(await res.json());
-        };
-        getProduct();
-    }, []);
 
     const ShowProduct = () => {
         return (
           <div className="row">
             <div className=" col-md-6 col-lg-6 my-3">
-                <div class="card-top " key={product.id}>
-                  <img 
-                  class="card-image"
+                <div className="card-top " key={product.id}>
+                  <img  alt=""
+                  className="card-image"
                     src={ product.image}
                   />
                 </div>
             </div>
             <div className=" col-md-6  col-lg-6">
-                <div class="card-body " key={product.id}>
+                <div className="card-body " key={product.id}>
                  <h1>{product.title}</h1>
                  <h4>{product.description}</h4>
-                 <h4>Chất lượng:<FaStar /><FaStar /><FaStar /><FaStar /><FaStarHalfAlt />{" "}</h4>
+                 <div className="card-rate">
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+
+                  </div>
                  
                   <button 
                     onClick={() => {

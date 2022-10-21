@@ -1,0 +1,29 @@
+.product-image img {
+    width: 100px;
+}
+.totals {
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    .total-title,.total-item,.total-text  {
+        border: 1px solid #eee;
+        border-left: none;
+        border-right: none;
+        padding: 15px 0;
+    }
+    .total-action {
+       display: flex;
+       justify-content: center;
+       margin-top: 10px;
+    }
+   
+}
+@media screen and (max-width:768px) {
+   .product-image {
+    width: 100%;
+    img {
+        width: 100%;
+    }
+   }
+    
+  }

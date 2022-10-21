@@ -1,16 +1,16 @@
 import React from 'react'
 import "./banner.scss";
-import SideNS from "../SideNS/sideNS"
-import SideSP from "../SideSP/sideSP"
+import SideNS from "../SideArtist/artist"
+import SideSP from "../SideProduct/product"
 import Products from "../Products/products";
-
+import Banner from "../../Data/banner.png"
 export default function home() {
   return (
-    <div className='container' >
-    <img  className='home-img' src='https://theperfumehouse.vn/wp-content/uploads/2020/06/banner-nuoc-hoa-dubai-the-perfume-house.jpg'></img>
-    <SideNS /> 
-    <SideSP /> 
-    <Products /> 
+    <div className='container  banner' >
+    <img alt='baner-img' className='home-img' src={Banner}></img>
+    <SideSP/>
+  <SideNS/>
+  <Products/>
     </div>
   )
 }

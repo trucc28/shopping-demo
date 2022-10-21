@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import "./sideNS.scss";
+import "./artist.scss";
 export default function Banner() {
 
     const settings = {
@@ -34,26 +34,26 @@ export default function Banner() {
       ]
     };
     return ( 
-      <div className="container  ">
-        <h4 className="text-center my-4"> //ĐƯỢC NHIỀU NGHỆ SĨ TIN DÙNG//</h4>
+      <div className="container my-5  ">
+        <h4 className="text-center "> ĐƯỢC NHIỀU NGHỆ SĨ TIN DÙNG</h4>
       <Slider {...settings}>
         <div>
-          <img className="side-img" src="https://theperfumehouse.vn/wp-content/uploads/2022/07/tinh-dau-dubai-phuong-hoang-gold-.jpg"></img>
+          <img alt="" className="side-img" src="https://theperfumehouse.vn/wp-content/uploads/2022/07/tinh-dau-dubai-phuong-hoang-gold-.jpg"></img>
         </div>
         <div>
-          <img className="side-img" src="https://theperfumehouse.vn/wp-content/uploads/2022/07/sam-nuoc-hoa-dubai.jpg"></img>
+          <img alt="" className="side-img" src="https://theperfumehouse.vn/wp-content/uploads/2022/07/sam-nuoc-hoa-dubai.jpg"></img>
         </div>
         <div>
-          <img className="side-img" src="https://theperfumehouse.vn/wp-content/uploads/2022/07/nguoi-noi-tieng-nuoc-hoa-dubai-1.jpg"></img>
+          <img alt="" className="side-img" src="https://theperfumehouse.vn/wp-content/uploads/2022/07/nguoi-noi-tieng-nuoc-hoa-dubai-1.jpg"></img>
         </div>
         <div>
-          <img className="side-img" src="https://theperfumehouse.vn/wp-content/uploads/2022/07/nguoi-noi-tieng-nuoc-hoa-dubai.jpg"></img>
+          <img alt="" className="side-img" src="https://theperfumehouse.vn/wp-content/uploads/2022/07/nguoi-noi-tieng-nuoc-hoa-dubai.jpg"></img>
         </div>
         <div>
-          <img className="side-img" src="https://theperfumehouse.vn/wp-content/uploads/2022/07/ngoc-trinh-nuoc-hoa-dubai.jpg"></img>
+          <img alt="" className="side-img" src="https://theperfumehouse.vn/wp-content/uploads/2022/07/ngoc-trinh-nuoc-hoa-dubai.jpg"></img>
         </div>
         <div>
-          <img className="side-img" src="https://theperfumehouse.vn/wp-content/uploads/2022/07/huong-giang-nuoc-hoa-dubai.jpg"></img>
+          <img alt="" className="side-img" src="https://theperfumehouse.vn/wp-content/uploads/2022/07/huong-giang-nuoc-hoa-dubai.jpg"></img>
         </div>
         
          </Slider>
